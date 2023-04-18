@@ -7,12 +7,16 @@
         <title>Good Yellow Tokyo</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <script 
             src="https://code.jquery.com/jquery-3.6.4.min.js"
             integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
             crossorigin="anonymous"
         ></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
     </head>
 <body>
     <class="container">
@@ -55,7 +59,7 @@
     <section class="section-menu">
         <h2 id="ABOUT">ABOUT</h2>
         <div class="section-inner">
-            <ul>
+            <ul >
                 <li>
                     <a>Good Yellow Tokyoについて</a>
                 </li>
@@ -82,31 +86,25 @@
         </div>
         
         <section class="section-menu">
-            <div class="photos">
-                <ul>
+            <div class="item-picture">
+                <ul class="slider">
                     <li>
                         <img class="section-menu_item-picture" src="./konitan/images/food/cheese_02.png" alt="food1">
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <img class="section-menu_item-picture" src="./konitan/images/food/ひまわり.png" alt="food2">
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <img class="section-menu_item-picture" src="./konitan/images/food/タンポポ.png" alt="food3">
                     </li>
-                </ul>
-                <ul>
                     <li>
                         <img class="section-menu_item-picture" src="./konitan/images/food/octopus.png" alt="food4">
                     </li>
-                </ul>
-                
+                    <li>
+                        <img class="section-menu_item-picture" src="./konitan/images/food/lineinari.JPG" alt="food5">
+                    </li>
+                </ul>    
             </div>
-            
-
         </section>
 
     </section>
@@ -270,7 +268,16 @@
         </div>
 
     </footer>
-    </section>    
+    </section>
+    <script>
+        $(".slider").slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+        })
+    </script>    
 </body>
 </html>
 
