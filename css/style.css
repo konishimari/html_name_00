@@ -147,11 +147,12 @@ section2
 /* -----------------
 section3
 -------------------*/
-.card__wrapper {
+/* .card__wrapper { */
     width: 900px;
     height: auto;
-    display: contents      
-}
+    display: contents;
+    margin: 0 0 0 100px;      
+/* } */
 .card {
     width: 400px;
     display: flex;
@@ -170,7 +171,7 @@ section3
     align-content: center;
 }
 .text{
-    margin: 100px 50px 0 50px;
+    margin: 50px 50px 0 50px;
 }
 .card__content {
     display: flex;
@@ -187,10 +188,14 @@ section4
     width: 300px;
     margin: 15px;
 }
+.section-content  {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
 .more__btn {
     width: 200px;
     height: 200px;
-    margin: 0 auto ;
+    margin: 80px auto ;
     border: solid 2px #fbc04a;
     background-color: #fbc04a;
     border-radius: 50% ; 

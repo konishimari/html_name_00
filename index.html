@@ -20,17 +20,17 @@
     </head>
 <body>
     <div class="wrapper">
-     <class="container"> 
+     <div cl="container"> 
         <header class="header">
             <div class="header__wrapper">
                 <div class="header__image">
-                    <img src="./konitan/images/logo.png" width="20%">
+                    <img src="./konitan/images/logo_２.png" width="20%">
                 </div>
             <div class="header__wrapp">
                 <nav>
                     <ul class="header-list">
                             <li class="header-item"><a href="#ABOUT">ABOUT</a></li>
-                            <li class="header-item"><a href="#COURSE">COURSE</a></li>
+                            <li class="header-item"><a href="#ACTIVITY">ACTIVITY</a></li>
                             <li class="header-item"><a href="#DIARY">DIARY</a></li>
                             <li class="header-item"><a href="#ACCESS">ACCESS</a></li>
                             <li class="header-item"><a href="#CONTACT">CONTACT</a></li>
@@ -42,14 +42,15 @@
             <div class="top__image">
                 <img src="./konitan/images/food/ssup_01.png" width="100%">
                     <div class="top__image__copy">
+                    <!-- <h1 style="display: none">サンプルタイトル</h1> -->
                     <ul>
-                        <h1>セカイを変えるしあわせの"Yellow"</h1> 
+                        <h1 style="display: none;">セカイを変えるしあわせの"Yellow"</h1> 
                     </ul>
                     <ul>
-                        <h1>ここで待ってるよ</h1>
+                        <h1 style="display: none;">ここで待ってるよ。</h1>
                     </ul>
                     <ul>
-                        <h1>Good Yellow Tokyo</h1>
+                        <h1 style="display: none;">Good Yellow Tokyo</h1>
                     </ul>
                 </ul>
             </div>
@@ -107,12 +108,12 @@
     </section>
     <div class="section-menu__wrapper">
         <section class="section-menu">
-            <h2 id="COURSE">COURSE</h2>
+            <h2 id="ACTIVITY">ACTIVITY</h2>
             <div class="section-inner">
                 <ul>
                     <p>
                         <h1>こどもから大人まで参加できるよう、多くの専門家や<br>
-                             全国から選ばれた元気サポーターのアドバイスのもと、作られました。
+                             全国から選ばれた元気サポーターのアドバイスのもと、様々な活動があります。
                         </h1>
                     </p>
                 </ul>
@@ -136,7 +137,7 @@
                     </h1>
                 </div>
             </div>
-            </div>
+        </div>
         <div class="card">
             <div class="card__image">
                 <img src="./konitan/images/food/inari.JPG" alt="ゆずいなり">
@@ -257,26 +258,35 @@
         </div>
         </div>
     <section class="contact">        
-    </section>
-        <footer>
-            <div class="footer__wrapper">
-                <div class="copyrights">
-                    <h1>copyrights 2023 Good Yellow Tokyo All RIghts Reserved.</h1>
-                </div>
-            
-            </div>
-        </footer>
         </section>
-        <script>
-            $(".slider").slick({
-                infinite: true,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-            })
-        </script>
-    </div>    
+            <footer>
+                <div class="footer__wrapper">
+                    <div class="copyrights">
+                        <h1>copyrights 2023 Good Yellow Tokyo All RIghts Reserved.</h1>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    <script>
+        // ここにjsコードを記述する //
+        $(".slider").slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+        })
+        
+        $('h1').fadeIn(4000, function() {
+            console.log('フェードインされました！');
+        });
+            // 何に対して（セレクタ）が適切にしていいるか？
+            // console.log($("top__image__copy"))
+            // どうするの指示（メソッド）が間違ってないか？
+            // $("top__image__copy").fadeout(3000);
+            // コンソールでエラーを確認する
+        
+    </script>    
 </body>
 </html>
 
